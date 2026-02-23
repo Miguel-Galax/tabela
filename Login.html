@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  </head>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
 <body>
-<h1>Login</h1>
-<form action="Receitas.html">
-  <label for="fname">:Nome</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">:Senha</label><br>
-  <input type="text" id="lname" name="lname"><br><br>
-  <label for="ftele">:Telefone</label><br>
-  <input type="text" id="ftele" name="ftele"><br>
-  <label for="femail">:Email</label><br>
-  <input type="text" id="femail" name="femail"><br>
-   <input type="submit" value="Submit">
+    <h1>Login</h1>
+    <!-- O action deve levar a um backend (ex: login.php) em produção -->
+    <form action="Receitas.html">
+        <label for="fname">Nome:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
 
-</form>
+        <label for="lname">Senha:</label><br>
+        <!-- type="password" oculta os caracteres -->
+        <input type="password" id="lname" name="lname" required><br><br>
 
+        <label for="ftele">Telefone:</label><br>
+        <input type="tel" id="ftele" name="ftele"><br>
+
+        <label for="femail">Email:</label><br>
+        <!-- type="email" valida o formato -->
+        <input type="email" id="femail" name="femail" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
