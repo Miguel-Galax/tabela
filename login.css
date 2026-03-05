@@ -1,24 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9; /* Um cinza claro e suave */
+    background-color: #f4f4f9; 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
-h1 {
-    color: #333;
-    margin-bottom: 1.5rem;
-    
-}
     .input-group {
     margin-bottom: 1rem;
-     text-align: left; /* Alinha os rótulos à esquerda dentro do grupo */
+     text-align: left; 
 }
 
 label {
-    display: block; /* Garante que o rótulo ocupe sua própria linha */
+    display: block; 
     margin-bottom: 0.5rem;
     color: #555;}
 
@@ -30,6 +25,6 @@ input[type="tel"] {
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    box-sizing: border-box; 
     font-size: 1rem;
 }
