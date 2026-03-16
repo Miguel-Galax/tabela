@@ -1,31 +1,77 @@
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-    .input-group {
-    margin-bottom: 1rem;
-     text-align: left; 
+background:rgba(255,255,255,0.05); /* Fundo branco transparente */
+    backdrop-filter:blur(10px); /* Efeito de vidro (glassmorphism) */
+    padding:40px; /* Espaçamento interno */
+    border-radius:20px; /* Cantos arredondados */
+    box-shadow:0 10px 40px rgba(0,0,0,0.4); /* Sombra elegante */
+    width:400px; /* Largura do container */
+    text-align:center; /* Centraliza texto */
+input{
+    width:100%; /* Ocupa toda largura do container */
+    padding:12px; /* Espaçamento interno */
+    border:none; /* Remove borda padrão */
+    border-radius:10px; /* Cantos arredondados */
+    margin-bottom:15px; /* Espaço abaixo do campo */
+    outline:none; /* Remove contorno ao clicar */
+    font-size:14px; /* Define tamanho da fonte */
 }
 
-label {
-    display: block; 
-    margin-bottom: 0.5rem;
-    color: #555;}
+/* Efeito ao clicar no input */
+input:focus{
+    box-shadow:0 0 10px rgba(0,255,255,0.7); /* Glow azul ao focar */
+}
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"] {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
-    font-size: 1rem;
+/* Estilo do botão */
+button{
+    width:100%; /* Botão ocupa toda largura */
+    padding:12px; /* Espaçamento interno */
+    border:none; /* Remove borda */
+    border-radius:10px; /* Cantos arredondados */
+    background:linear-gradient(45deg,#ff512f,#dd2476); /* Degradê no botão */
+    color:white; /* Cor do texto */
+    font-size:16px; /* Tamanho do texto */
+    font-weight:600; /* Deixa o texto mais forte */
+    cursor:pointer; /* Muda cursor para mão */
+    transition:0.3s; /* Suaviza animações */
+}
+
+/* Efeito quando passa o mouse no botão */
+button:hover{
+    transform:scale(1.05); /* Aumenta levemente o botão */
+    box-shadow:0 10px 20px rgba(0,0,0,0.4); /* Adiciona sombra */
+}
+
+body{
+    font-family:'Poppins', sans-serif; /* Define a fonte principal */
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364); /* Fundo com degradê bonito */
+    color:white; /* Cor padrão do texto */
+    min-height:100vh; /* Faz a página ocupar pelo menos toda altura da tela */
+    display:flex; /* Ativa o sistema flexbox */
+    justify-content:center; /* Centraliza conteúdo horizontalmente */
+    align-items:center; /* Centraliza conteúdo verticalmente */
+}
+
+/* Container principal do site */
+.container{
+    background:rgba(255,255,255,0.05); /* Fundo branco transparente */
+    backdrop-filter:blur(10px); /* Efeito de vidro (glassmorphism) */
+    padding:40px; /* Espaçamento interno */
+    border-radius:20px; /* Cantos arredondados */
+    box-shadow:0 10px 40px rgba(0,0,0,0.4); /* Sombra elegante */
+    width:400px; /* Largura do container */
+    text-align:center; /* Centraliza texto */
+}
+
+/* Estilo do título */
+h1{
+    font-size:32px; /* Tamanho grande do texto */
+    margin-bottom:20px; /* Espaço abaixo do título */
+    font-weight:600; /* Deixa o texto semi-negrito */
+}
+
+/* Estilo de parágrafos */
+p{
+    font-size:16px; /* Define tamanho do texto */
+    margin-bottom:25px; /* Espaço abaixo do parágrafo */
+    opacity:0.8; /* Deixa texto levemente transparente */
 }
